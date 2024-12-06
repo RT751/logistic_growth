@@ -15,9 +15,11 @@ N0 = exp(6.883) = 975.5486201
 r = 1.004 * 10^-2 = 0.01004
 
 
+
 To estimate the paramter K, the region of the graph where N(t) = K was used. The region t>2500 was chosen because the population size has plateaued and reached a stable point in this region of the generated graph. A linear model for this region was created where N is a constant (lm(N~1)). The estimate of the intercept from this linear model is 6 * 10^10.
 
 so, K = 6 * 10^10
+
 
 
 Using these estimated parameters, a logistic function was created where N = (N0*K*exp(rt))/(K-N0+N0*exp(r*t)). When both the data and this function were plotted, it is evident that the logistic function is a good fit to the data. 
