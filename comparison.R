@@ -19,7 +19,7 @@ exponential_fun <- function(t) {
   return(N)
 }
   
-##graph 1 
+##graph comparing curves on normal scale
 
   ggplot(aes(t,N), data = growth_data) +
     
