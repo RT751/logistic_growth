@@ -95,5 +95,7 @@ This value is much greater than the population size of 60,000,000,000 predicted 
 
 
 **3. Add an R script to your repository that makes a graph comparing the exponential and logistic growth curves (using the same parameter estimates you found). Upload this graph to your repo and include it in the README.md file so it can be viewed in the repo homepage.**
+https://github.com/B-Thomas8/logistic_growth/blob/dev/comparison.png?raw=true)![image](https://github.com/user-attachments/assets/0a740d21-09da-4c0c-bb4c-e22593d63772)
+
 
 
