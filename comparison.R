@@ -19,6 +19,8 @@ exponential_fun <- function(t) {
   return(N)
 }
   
+##graph 1 
+
   ggplot(aes(t,N), data = growth_data) +
     
   geom_function(fun=logistic_fun, aes(color ="Logistic")) +  
@@ -26,10 +28,24 @@ exponential_fun <- function(t) {
   geom_function(fun=exponential_fun, aes(color = "Exponential")) +
   
   guides(colour = guide_legend(title = "Growth Curve")) +
-  
+      
   labs(x = "Time (minutes)", y = "N", title = "Comparison of Exponential and Logistic Growth Curves")
-  
 
+##graph comparing curves on a semilog plot
+  
+  ggplot(aes(t,N), data = growth_data) +
+    
+    geom_function(fun=logistic_fun, aes(color ="Logistic")) +  
+    
+    geom_function(fun=exponential_fun, aes(color = "Exponential")) +
+    
+    guides(colour = guide_legend(title = "Growth Curve")) +
+    
+    scale_y_continuous(trans='log10') +
+    
+    labs(x = "Time (minutes)", y = "logN", title = "Comparison of Exponential and Logistic Growth Curves")
+  
+  
  
   
     
