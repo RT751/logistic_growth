@@ -29,7 +29,7 @@ exponential_fun <- function(t) {
   
   guides(colour = guide_legend(title = "Growth Curve")) +
       
-  labs(x = "Time (minutes)", y = "N", title = "Comparison of Exponential and Logistic Growth Curves")
+  labs(x = "Time (minutes)", y = "N (# cells)", title = "Comparison of Exponential and Logistic Growth Curves")
 
 ##graph comparing curves on a semilog plot
   
@@ -43,7 +43,7 @@ exponential_fun <- function(t) {
     
     scale_y_continuous(trans='log10') +
     
-    labs(x = "Time (minutes)", y = "logN", title = "Comparison of Exponential and Logistic Growth Curves")
+    labs(x = "Time (minutes)", y = "Log10(N)", title = "Comparison of Exponential and Logistic Growth Curves")
   
   
  
