@@ -18,7 +18,7 @@ N(t) = N_0 e^{rt}
 This can be transformed into a linear relationship by taking the natural log. This gives the equation:
   ```math
 \begin{equation}
-log(N(t)) = log(N_0) + rt
+ln(N(t)) = ln(N_0) + rt
 \end{equation}
 ```
 To estimate log(*N0*) and *r* using this equation, a linear model was fitted to the growth data between t = 0 and t = 1000 where the natural log of N was the response variable and time was the predictor variable. The summary of this model shows the estimate for the gradient of the line (*r*) and the y-intercept (log(*N0*)). To obtain N0 the exponential function of the y-intercept was taken.
