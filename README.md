@@ -47,7 +47,7 @@ K = 6 * 10^{10}
 ```
 
 
-Using these estimated parameters, a logistic function was created where:
+These estimated parameters were inputted into a logistic function where:
   ```math
 \begin{equation}
 N(t) = \frac{K N_0 e^{rt}}{K-N_0+N_0 e^{rt}}
