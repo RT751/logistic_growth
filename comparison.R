@@ -45,8 +45,19 @@ exponential_fun <- function(t) {
     
     labs(x = "Time (minutes)", y = "Log10(N)", title = "Comparison of Exponential and Logistic Growth Curves")
   
-  
+##graph zooming in to show the different shapes of the curves 
  
+  ggplot(aes(t,N), data = growth_data) +
+    
+    geom_function(fun=logistic_fun, aes(color ="Logistic")) +  
+    
+    geom_function(fun=exponential_fun, aes(color = "Exponential")) +
+    
+    guides(colour = guide_legend(title = "Growth Curve")) +
+    
+    coord_cartesian(ylim = c(0,6.4037e+10)) +
+    
+    labs(x = "Time (minutes)", y = "N (# cells)", title = "Comparison of Exponential and Logistic Growth Curves")
   
     
   
