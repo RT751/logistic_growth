@@ -97,11 +97,16 @@ This value is much greater than the population size of 60,000,000,000 predicted 
 **3. Add an R script to your repository that makes a graph comparing the exponential and logistic growth curves (using the same parameter estimates you found). Upload this graph to your repo and include it in the README.md file so it can be viewed in the repo homepage.**
 
 This graph compares the exponential and logistic growth curves.
-[https://github.com/B-Thomas8/logistic_growth/blob/dev/comparison_1.png?raw=true![image](https://github.com/user-attachments/assets/6d9c2fd8-8530-496a-9e55-43ea1232dcfd)](https://github.com/B-Thomas8/logistic_growth/blob/dev/comparison_1.png?raw=true)
-
+<p align="center">
+     <img src="https://github.com/RT751/logistic_growth/blob/dev/comparison_1.png?raw=true" width="600" height="650">
+  </p>
 
 
 This graph compares the growth curves on a semilog plot where the y-axis has been log-transformed. This shows how both growth curves start with exponential increases, but the logistic growth curve eventually stabilises at an equilibrium whereas the exponential growth curve continues to increase exponentially.
-[https://github.com/B-Thomas8/logistic_growth/blob/dev/comparison.png?raw=true![image](https://github.com/user-attachments/assets/0a740d21-09da-4c0c-bb4c-e22593d63772)](https://github.com/B-Thomas8/logistic_growth/blob/dev/comparison.png?raw=true)
+
+<p align="center">
+     <img src="https://github.com/RT751/logistic_growth/blob/dev/comparison.png?raw=true" width="600" height="650">
+  </p>
+
 
 
