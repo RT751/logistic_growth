@@ -44,6 +44,8 @@ When both the data and this function were plotted, it was evident that the logis
 
 **2. Use your estimates of *N0* and *r* to calculate the population size at t = 4980 min, assuming that the population grows exponentially. How does it compare to the population size predicted under logistic growth?**
 
+a) Exponential growth:
+
 $N(t) = N_0 e^{rt}$
 
 
@@ -53,13 +55,31 @@ $r = 0.01004$
 
 $t = 4980$
 
-$N(t) = 975.5486201 * e^{0.01004 * 4980} = 5.053887596 * 10^{24} = 5,053,887,596,000,000,000,000,000$
+$N(t) = 975.5486201 * e^{(0.01004)(4980)} = 5.053887596 * 10^{24} = 5,053,887,596,000,000,000,000,000$
 
 
-This value is much greater than the population size of 60,000,000,000 predicted under the logistic growth model. This is because a logistic model considers that resources are not finite meaning a population cannot continue to grow exponentially and will eventually settle at a carrying capacity, in this case, 60,000,000,000.
 
 
-**3. Add an R script to your repository that makes a graph comparing the exponential and logistic growth curves (using the same parameter estimates you found). Upload this graph to your repo and include it in the README.md file so it can be viewed in the repo homepage.**
+b) Logistic growth:
+
+$N(t) = \frac{K N_0 e^{rt}}{K-N_0+N_0 e^{rt}}$
+
+$N_0 = 975.5486201$
+
+$r = 0.01004$
+
+$t = 4980$
+
+$K = 6 * 10^{10}$
+
+$N(t) = \frac{(6 * 10^{10})(975.5486201) e^{(0.01004)(4980)}}{(6 * 10^{10})-(975.5486201)+((975.5486201) e^{(0.01004)(4980)}}) = 6 * 10^{10}$
+
+So, according to the logistic growth equation, N = K ($6 * 10^{10}$) at 4980 minutes, this is expected as population growth has stabilised by 4980 minutes on the graph.
+
+The population size at 4980 minutes according to exponential growth is much greater than the population size predicted under the logistic growth model. This is because a logistic model considers that resources are not finite meaning a population cannot continue to grow exponentially and will eventually settle at a carrying capacity, in this case, 60,000,000,000.
+
+
+**3. Add an R script to your repository that makes a graph comparing the exponential and logistic growth curves (using the same parameter estimates you found). Upload this graph to your repo and include it in the README.md file so it can be viewed on the repo homepage.**
 
 This graph compares the exponential and logistic growth curves.
 <p align="center">
