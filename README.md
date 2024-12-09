@@ -18,7 +18,7 @@ $r = 1.004 * 10^{-2} = 0.01004$
 
 
 ***Estimating K***:
-To estimate the parameter *K*, the region of the graph where *N(t)* = *K* was used. The region *t* > 2500 was chosen because the population size has plateaued and reached a stable point in this region of the generated graph. A linear model for this region was created where *N* is a constant (lm(N ~ 1)). The estimate of the intercept from this linear model is the estimate for K.
+To estimate the parameter *K*, the region of the graph where *N(t)* = *K* was used. The region *t* > 2500 was chosen because the population size has plateaued and reached a stable point in this region of the generated graph. A linear model for this region was created where *N* is a constant (lm(N ~ 1)). The estimate of the intercept from the summary of this linear model is the estimate for K.
 
   So,
 $K = 6 * 10^{10}$
@@ -34,7 +34,7 @@ N(t) = \frac{K N_0 e^{rt}}{K-N_0+N_0 e^{rt}}
 
 
 
-When both the data and this function were plotted, it was evident that the logistic function is a good fit to the data. 
+When the raw data and this function were plotted together, it was evident that the logistic function is a good fit to the data. 
 
 
 
@@ -72,7 +72,7 @@ $t = 4980$
 
 $K = 6 * 10^{10}$
 
-$N(t) = \frac{(6 * 10^{10})(975.5486201) e^{(0.01004)(4980)}}{(6 * 10^{10})-(975.5486201)+((975.5486201) e^{(0.01004)(4980)}}) = 6 * 10^{10}$
+$N(t) = \frac{(6 * 10^{10})(975.5486201) e^{(0.01004)(4980)}}{(6 * 10^{10})-(975.5486201)+((975.5486201) e^{(0.01004)(4980)}}) = 6 * 10^{10} = 60,000,000,000$ 
 
 So, according to the logistic growth equation, N is equal to K ($6 * 10^{10}$) at 4980 minutes. This is expected as population growth has stabilised by 4980 minutes on the graph.
 
@@ -93,7 +93,7 @@ In the graph above, the shapes of the growth curves cannot be compared because t
      <img src="https://github.com/RT751/logistic_growth/blob/dev/Comparison_2.png?raw=true" width="550" height="400">
   </p>
 
-The curves can also be compared on a semilog plot where the y-axis has been log-transformed. This shows exponential growth as a positive linear relationship. The graph illustrates how both growth curves start with exponential increases, but the logistic growth curve eventually stabilises at an equilibrium whereas the exponential growth curve continues to increase exponentially.
+The curves can also be compared on a Semi-log plot where the y-axis has been log-transformed. This shows exponential growth as a positive linear relationship. The graph illustrates how both growth curves start with exponential increases, but the logistic growth curve eventually stabilises at an equilibrium whereas the exponential growth curve continues to increase exponentially.
 
 <p align="center">
      <img src="https://github.com/RT751/logistic_growth/blob/dev/Comparison_3.png?raw=true" width="550" height="400">
