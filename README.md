@@ -9,9 +9,7 @@ This analysis fitted a logistic growth model to the *Escherichia coli* populatio
 ***Plotting data***: Firstly, a plot showing the population size over time was produced using the population growth data from the 'experiment.csv' file. The data showed a sigmoidal pattern which is indicative of logistic growth. The y-axis was then log-transformed to see if the population growth was exponential, where a positive linear relationship on the plot indicates exponential growth. The plot showed that growth was exponential from 0 until approximately 2000 minutes, after which growth slows down and reaches an equilibrium. 
 
 ***Estimating N0 and r***:
-To estimate the parameters *N0* and *r*, the region of the graph exhibiting exponential growth is used. t < 1000 was used in this case because this is a small value of t and this region shows exponential growth in the graph. Because the growth is exponential, the equation for population size in this region can be approximated as: $N(t) = N_0 e^{rt}$.
-This can be transformed into a linear relationship by taking the natural log. This gives the equation: $ln(N(t)) = ln(N_0) + rt$.
-To estimate log(*N0*) and *r* using this equation, a linear model was fitted to the growth data between t = 0 and t = 1000 where the natural log of N was the response variable and time was the predictor variable. The summary of this model shows the estimate for the gradient of the line (*r*) and the y-intercept (log(*N0*)). To obtain N0 the exponential function of the y-intercept was taken.
+To estimate the parameters *N0* and *r*, the region of the graph exhibiting exponential growth is used. t < 1000 was used in this case because this is a small value of t and this region shows exponential growth in the graph. Because the growth is exponential, the equation for population size in this region can be approximated as: $N(t) = N_0 e^{rt}$. This can be transformed into a linear relationship by taking the natural logarithm. This gives the equation: $ln(N(t)) = ln(N_0) + rt$. To estimate log(*N0*) and *r* using this equation, a linear model was fitted to the growth data between t = 0 and t = 1000 where the natural log of N was the response variable and time was the predictor variable. The summary of this model shows the estimate for the gradient of the line (*r*) and the y-intercept (log(*N0*)). To obtain N0 the exponential function of the y-intercept was taken.
 
 $N_0 = exp(6.883) = 975.5486201$
 
@@ -65,17 +63,20 @@ This value is much greater than the population size of 60,000,000,000 predicted 
 
 This graph compares the exponential and logistic growth curves.
 <p align="center">
-     <img src="https://github.com/RT751/logistic_growth/blob/dev/comparison_1.png?raw=true" width="600" height="650">
+     <img src="https://github.com/RT751/logistic_growth/blob/dev/Comparison_1.png?raw=true" width="550" height="400">
   </p>
 
 
 In the graph above, the shapes of the growth curves cannot be compared because the logistic curve appears as a flat line. To compare the shapes of the curves, we can zoom in on a smaller range of the y-axis. This graph is shown below. 
 
+<p align="center">
+     <img src="https://github.com/RT751/logistic_growth/blob/dev/Comparison_2.png?raw=true" width="550" height="400">
+  </p>
 
 The curves can also be compared on a semilog plot where the y-axis has been log-transformed. This shows exponential growth as a positive linear relationship. The graph illustrates how both growth curves start with exponential increases, but the logistic growth curve eventually stabilises at an equilibrium whereas the exponential growth curve continues to increase exponentially.
 
 <p align="center">
-     <img src="https://github.com/RT751/logistic_growth/blob/dev/comparison.png?raw=true" width="600" height="650">
+     <img src="https://github.com/RT751/logistic_growth/blob/dev/Comparison_3.png?raw=true" width="550" height="400">
   </p>
 
 
