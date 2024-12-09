@@ -69,7 +69,10 @@ This graph compares the exponential and logistic growth curves.
   </p>
 
 
-This graph compares the growth curves on a semilog plot where the y-axis has been log-transformed. This shows how both growth curves start with exponential increases, but the logistic growth curve eventually stabilises at an equilibrium whereas the exponential growth curve continues to increase exponentially.
+In the graph above, the shapes of the growth curves cannot be compared because the logistic curve appears as a flat line. To compare the shapes of the curves, we can zoom in on a smaller range of the y-axis. This graph is shown below. 
+
+
+The curves can also be compared on a semilog plot where the y-axis has been log-transformed. This shows exponential growth as a positive linear relationship. The graph illustrates how both growth curves start with exponential increases, but the logistic growth curve eventually stabilises at an equilibrium whereas the exponential growth curve continues to increase exponentially.
 
 <p align="center">
      <img src="https://github.com/RT751/logistic_growth/blob/dev/comparison.png?raw=true" width="600" height="650">
