@@ -1,5 +1,7 @@
 growth_data <- read.csv("experiment.csv")
 
+#defining functions
+
 N0 <- exp(6.88301)
 
 r <- 1.004e-02 
@@ -21,7 +23,7 @@ exponential_fun <- function(t) {
   
 ##graph comparing curves on normal scale
 
-  ggplot(aes(t,N), data = growth_data) +
+ggplot(aes(t,N), data = growth_data) +
     
   geom_function(fun=logistic_fun, aes(color ="Logistic")) +  
     
@@ -31,19 +33,6 @@ exponential_fun <- function(t) {
       
   labs(x = "Time (minutes)", y = "N (# cells)", title = "Comparison of Exponential and Logistic Growth Curves")
 
-##graph comparing curves on a semilog plot
-  
-  ggplot(aes(t,N), data = growth_data) +
-    
-    geom_function(fun=logistic_fun, aes(color ="Logistic")) +  
-    
-    geom_function(fun=exponential_fun, aes(color = "Exponential")) +
-    
-    guides(colour = guide_legend(title = "Growth Curve")) +
-    
-    scale_y_continuous(trans='log10') +
-    
-    labs(x = "Time (minutes)", y = "Log10(N)", title = "Comparison of Exponential and Logistic Growth Curves")
   
 ##graph zooming in to show the different shapes of the curves 
  
@@ -59,7 +48,20 @@ exponential_fun <- function(t) {
     
     labs(x = "Time (minutes)", y = "N (# cells)", title = "Comparison of Exponential and Logistic Growth Curves")
   
+##graph comparing curves on a semilog plot
+  
+  ggplot(aes(t,N), data = growth_data) +
     
+    geom_function(fun=logistic_fun, aes(color ="Logistic")) +  
+    
+    geom_function(fun=exponential_fun, aes(color = "Exponential")) +
+    
+    guides(colour = guide_legend(title = "Growth Curve")) +
+    
+    scale_y_continuous(trans='log10') +
+    
+    labs(x = "Time (minutes)", y = "Log10(N)", title = "Comparison of Exponential and Logistic Growth Curves on Semi-log Plot")
+  
   
 
   
