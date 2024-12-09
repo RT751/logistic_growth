@@ -74,7 +74,7 @@ $K = 6 * 10^{10}$
 
 $N(t) = \frac{(6 * 10^{10})(975.5486201) e^{(0.01004)(4980)}}{(6 * 10^{10})-(975.5486201)+((975.5486201) e^{(0.01004)(4980)}}) = 6 * 10^{10}$
 
-So, according to the logistic growth equation, N = K ($6 * 10^{10}$) at 4980 minutes, this is expected as population growth has stabilised by 4980 minutes on the graph.
+So, according to the logistic growth equation, N is equal to K ($6 * 10^{10}$) at 4980 minutes. This is expected as population growth has stabilised by 4980 minutes on the graph.
 
 The population size at 4980 minutes according to exponential growth is much greater than the population size predicted under the logistic growth model. This is because a logistic model considers that resources are not finite meaning a population cannot continue to grow exponentially and will eventually settle at a carrying capacity, in this case, 60,000,000,000.
 
@@ -99,5 +99,5 @@ The curves can also be compared on a semilog plot where the y-axis has been log-
      <img src="https://github.com/RT751/logistic_growth/blob/dev/Comparison_3.png?raw=true" width="550" height="400">
   </p>
 
-
+Code for these graphs found at: https://github.com/RT751/logistic_growth/blob/main/comparison.R
 
