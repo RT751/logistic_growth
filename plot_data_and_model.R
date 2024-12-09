@@ -18,7 +18,7 @@ data_subset2 <- growth_data |>
 model2 <- lm(N ~ 1, data_subset2)
 summary(model2)
 
-N0 <- exp(6.88301)  # using y intercept from above model
+N0 <- exp(6.883)  # using y intercept from above model
   
 r <- 1.004e-02 # using x intercept from above model, this will give initial pop size
   
