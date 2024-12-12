@@ -6,7 +6,15 @@ This analysis fitted a logistic growth model to the *Escherichia coli* populatio
 
 **Results**
 
-***Plotting data***: Firstly, a plot showing the population size over time was produced using the population growth data from the 'experiment.csv' file. The data showed a sigmoidal pattern which is indicative of logistic growth. The y-axis was then log-transformed to see if the population growth was exponential, where a positive linear relationship on the plot indicates exponential growth. The plot showed that growth was exponential from 0 until approximately 2000 minutes, after which growth slows down and reaches an equilibrium. 
+***Plotting data***: Firstly, a plot showing the population size over time was produced using the population growth data from the 'experiment.csv' file. The data showed a sigmoidal pattern which is indicative of logistic growth. 
+<p align="center">
+     <img src="https://github.com/RT751/logistic_growth/blob/main/logistic_growth_plot.png?raw=true" width="550" height="400">
+  </p>
+
+The y-axis was then log-transformed to see if the population growth was exponential, where a positive linear relationship on the plot indicates exponential growth. The plot showed that growth was exponential from 0 until approximately 2000 minutes, after which growth slows down and reaches an equilibrium. 
+<p align="center">
+     <img src="https://github.com/RT751/logistic_growth/blob/main/semi-log-plot.png?raw=true" width="550" height="400">
+  </p>
 
 ***Estimating N0 and r***:
 To estimate the parameters $N_0$ and *r*, the region of the graph exhibiting exponential growth was used. t < 1000 was used in this case because this is a small value of t and this region shows exponential growth in the graph. Because the growth is exponential, the equation for population size in this region can be approximated as $N(t) = N_0 e^{rt}$. This can be transformed into a linear relationship by taking the natural logarithm. This gives the equation $ln(N(t)) = ln(N_0) + rt$. To estimate $ln(N_0)$ and *r* using this equation, a linear model was fitted to the growth data between t = 0 and t = 1000 where the natural log of N $(ln(N(t)))$ was the response variable and time (*t*) was the explanatory variable. The summary of this model shows the estimate for the gradient of the line (*r*) and the y-intercept $(ln(N_0))$. To obtain $N_0$ the exponential function of the y-intercept was taken.
@@ -35,7 +43,9 @@ N(t) = \frac{K N_0 e^{rt}}{K-N_0+N_0 e^{rt}}
 
 
 When the raw data and this function were plotted together, it was evident that the logistic function is a good fit to the data. 
-
+<p align="center">
+     <img src="https://github.com/RT751/logistic_growth/blob/main/model-plot.png?raw=true" width="550" height="400">
+  </p>
 
 
 
@@ -83,20 +93,20 @@ The population size at 4980 minutes according to exponential growth is much grea
 
 This graph compares the exponential and logistic growth curves.
 <p align="center">
-     <img src="https://github.com/RT751/logistic_growth/blob/dev/Comparison_1.png?raw=true" width="550" height="400">
+     <img src="https://github.com/RT751/logistic_growth/blob/main/Comparison_1.png?raw=true" width="550" height="400">
   </p>
 
 
 In the graph above, the shapes of the growth curves cannot be compared because the logistic curve appears as a flat line. To compare the shapes of the curves, we can zoom in on a smaller range of the y-axis. This graph is shown below. 
 
 <p align="center">
-     <img src="https://github.com/RT751/logistic_growth/blob/dev/Comparison_2.png?raw=true" width="550" height="400">
+     <img src="https://github.com/RT751/logistic_growth/blob/main/Comparison_2.png?raw=true" width="550" height="400">
   </p>
 
 The curves can also be compared on a Semi-log plot where the y-axis has been log-transformed. This shows exponential growth as a positive linear relationship. The graph illustrates how both growth curves start with exponential increases, but the logistic growth curve eventually stabilises at an equilibrium whereas the exponential growth curve continues to increase exponentially.
 
 <p align="center">
-     <img src="https://github.com/RT751/logistic_growth/blob/dev/Comparison_3.png?raw=true" width="550" height="400">
+     <img src="https://github.com/RT751/logistic_growth/blob/main/Comparison_3.png?raw=true" width="550" height="400">
   </p>
 
 Code for these graphs found at: https://github.com/RT751/logistic_growth/blob/main/comparison.R
