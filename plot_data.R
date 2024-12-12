@@ -12,9 +12,7 @@ ggplot(aes(t,N), data = growth_data) +
   
   xlab("t") +
   
-  ylab("y") +
-  
-  theme_bw()
+  ylab("y") 
 
 ggplot(aes(t,N), data = growth_data) +
   
