@@ -15,11 +15,15 @@ logistic_fun <- function(t) {
   return(N)
   
 }
+#predict N when t = 4980
+logistic_fun(4980)
 
 exponential_fun <- function(t) {
   N <- N0*exp(r*t)
   return(N)
 }
+#predict N when t = 4980
+exponential_fun(4980)
   
 ##graph comparing curves on normal scale
 
