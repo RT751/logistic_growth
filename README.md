@@ -94,24 +94,23 @@ r <- 1.004e-02
 K <- 6.00e+10
 
 #defining functions
-logistic_fun <- function(t) {
-  
-  N <- (N0*K*exp(r*t))/(K-N0+N0*exp(r*t))
-  
-  return(N)
-  
-}
-#predict N when t = 4980
-logistic_fun(4980)
-
 exponential_fun <- function(t) {
   N <- N0*exp(r*t)
   return(N)
 }
 #predict N when t = 4980
 exponential_fun(4980)
+
+logistic_fun <- function(t) {
+  
+  N <- (N0*K*exp(r*t))/(K-N0+N0*exp(r*t))
+  return(N)
+  
+}
+#predict N when t = 4980
+logistic_fun(4980)
 ```
-The output of this is 6e+10 and 5.053938e+24, which are approximately the same as those calculated by hand. The small discrepancy between the output of the exponential function is likely due to the rounding of paramter estimates.
+The output of this is 5.053938e+24 and 6e+10 for exponential growth and logistic growth, respectively. These values are approximately the same as those calculated by hand. The small discrepancy between the output of the exponential function is likely due to the rounding of paramter estimates.
 
 So, according to the logistic growth equation, N is equal to K ($6 * 10^{10}$) at 4980 minutes. This is expected as population growth has stabilised by 4980 minutes on the graph.
 
