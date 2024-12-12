@@ -103,7 +103,7 @@ In the graph above, the shapes of the growth curves cannot be compared because t
      <img src="https://github.com/RT751/logistic_growth/blob/main/Comparison_B.png?raw=true" width="550" height="400">
   </p>
 
-The curves can also be compared on a Semi-log plot where the y-axis has been log-transformed. This shows exponential growth as a positive linear relationship. The graph illustrates how both growth curves start with exponential increases, but the logistic growth curve eventually stabilises at an equilibrium whereas the exponential growth curve continues to increase exponentially.
+The curves can also be compared on a semi-log plot where the y-axis has been log-transformed. This shows exponential growth as a positive linear relationship. This graph shows that both growth curves start with exponential population growth, but the logistic growth curve eventually stabilises at an equilibrium whereas the exponential growth curve continues to increase exponentially.
 
 <p align="center">
      <img src="https://github.com/RT751/logistic_growth/blob/main/Comparison_C.png?raw=true" width="550" height="400">
