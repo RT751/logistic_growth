@@ -11,7 +11,7 @@ This analysis fitted a logistic growth model to the *Escherichia coli* populatio
      <img src="https://github.com/RT751/logistic_growth/blob/main/logistic_growth_plot.png?raw=true" width="550" height="400">
   </p>
 
-The y-axis was then log-transformed to see if the population growth was exponential, where a positive linear relationship on the plot indicates exponential growth. The plot showed that growth was exponential from 0 until approximately 2000 minutes, after which growth slows down and reaches an equilibrium. 
+The y-axis was then log-transformed to see if the population growth was exponential, where a positive linear relationship on the plot indicates exponential growth. The plot showed that growth was exponential from 0 until approximately 1750 minutes, after which growth slows down and reaches an equilibrium. 
 <p align="center">
      <img src="https://github.com/RT751/logistic_growth/blob/main/semi-log-plot.png?raw=true" width="550" height="400">
   </p>
