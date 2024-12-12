@@ -30,6 +30,8 @@ ggplot(aes(t,N), data = growth_data) +
   geom_function(fun=exponential_fun, aes(color = "Exponential")) +
   
   guides(colour = guide_legend(title = "Growth Curve")) +
+  
+  scale_colour_manual(values = c("blue4", "cyan3")) +
       
   labs(x = "Time (minutes)", y = "N (# cells)", title = "Comparison of Exponential and Logistic Growth Curves")
 
@@ -46,6 +48,8 @@ ggplot(aes(t,N), data = growth_data) +
     
     coord_cartesian(ylim = c(0,6.4037e+10)) +
     
+    scale_colour_manual(values = c("blue4", "cyan3")) +
+    
     labs(x = "Time (minutes)", y = "N (# cells)", title = "Comparison of Exponential and Logistic Growth Curves")
   
 ##graph comparing curves on a semilog plot
@@ -59,6 +63,8 @@ ggplot(aes(t,N), data = growth_data) +
     guides(colour = guide_legend(title = "Growth Curve")) +
     
     scale_y_continuous(trans='log10') +
+    
+    scale_colour_manual(values = c("blue4", "cyan3")) +
     
     labs(x = "Time (minutes)", y = "Log10(N)", title = "Comparison of Exponential and Logistic Growth Curves on Semi-log Plot")
   
