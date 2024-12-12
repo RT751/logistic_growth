@@ -84,6 +84,35 @@ $K = 6 * 10^{10}$
 
 $N(t) = \frac{(6 * 10^{10})(975.5486201) e^{(0.01004)(4980)}}{(6 * 10^{10})-(975.5486201)+((975.5486201) e^{(0.01004)(4980)}}) = 6 * 10^{10} = 60,000,000,000$ 
 
+These estimates can be confirmed by producing the functions in R and inputting t = 4980:
+```
+#defining parameters
+N0 <- exp(6.88301)
+
+r <- 1.004e-02 
+
+K <- 6.00e+10
+
+#defining functions
+logistic_fun <- function(t) {
+  
+  N <- (N0*K*exp(r*t))/(K-N0+N0*exp(r*t))
+  
+  return(N)
+  
+}
+#predict N when t = 4980
+logistic_fun(4980)
+
+exponential_fun <- function(t) {
+  N <- N0*exp(r*t)
+  return(N)
+}
+#predict N when t = 4980
+exponential_fun(4980)
+```
+The output of this is 6e+10 and 5.053938e+24, which are approximately the same as those calculated by hand. The small discrepancy between the output of the exponential function is likely due to the rounding of paramter estimates.
+
 So, according to the logistic growth equation, N is equal to K ($6 * 10^{10}$) at 4980 minutes. This is expected as population growth has stabilised by 4980 minutes on the graph.
 
 The population size at 4980 minutes according to exponential growth is much greater than the population size predicted under the logistic growth model. This is because a logistic model considers that resources are not finite meaning a population cannot continue to grow exponentially and will eventually settle at a carrying capacity, in this case, 60,000,000,000.
