@@ -112,7 +112,7 @@ logistic_fun <- function(t) {
 #predict N when t = 4980
 logistic_fun(4980)
 ```
-The output of this is 5.053938e+24 and 6e+10 for exponential growth and logistic growth, respectively. These values are approximately the same as those calculated by hand. The small discrepancy between the output of the exponential function is likely due to the rounding of paramter estimates.
+The output of this is 5.053938e+24 and 6e+10 for exponential growth and logistic growth, respectively. These values are approximately the same as those calculated by hand. The small discrepancy between the output of the exponential function and the calculated value is likely due to the rounding of paramter estimates.
 
 
 So, the population size at 4980 minutes according to exponential growth is much greater than the population size predicted under the logistic growth model. This is because a logistic model considers that resources are not finite meaning a population cannot continue to grow exponentially and will eventually settle at a carrying capacity, in this case, 60,000,000,000.
