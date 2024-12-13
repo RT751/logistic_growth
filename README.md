@@ -84,6 +84,8 @@ $K = 6 * 10^{10}$
 
 $N(t) = \frac{(6 * 10^{10})(975.5486201) e^{(0.01004)(4980)}}{(6 * 10^{10})-(975.5486201)+((975.5486201) e^{(0.01004)(4980)}}) = 6 * 10^{10} = 60,000,000,000$ 
 
+According to the logistic growth equation, N is equal to K ($6 * 10^{10}$) at 4980 minutes. This is expected as population growth has stabilised by 4980 minutes on the graph.
+
 The calculated values can be confirmed by producing the functions in R and inputting t = 4980:
 ```
 #defining parameters
@@ -112,9 +114,8 @@ logistic_fun(4980)
 ```
 The output of this is 5.053938e+24 and 6e+10 for exponential growth and logistic growth, respectively. These values are approximately the same as those calculated by hand. The small discrepancy between the output of the exponential function is likely due to the rounding of paramter estimates.
 
-So, according to the logistic growth equation, N is equal to K ($6 * 10^{10}$) at 4980 minutes. This is expected as population growth has stabilised by 4980 minutes on the graph.
 
-The population size at 4980 minutes according to exponential growth is much greater than the population size predicted under the logistic growth model. This is because a logistic model considers that resources are not finite meaning a population cannot continue to grow exponentially and will eventually settle at a carrying capacity, in this case, 60,000,000,000.
+So, the population size at 4980 minutes according to exponential growth is much greater than the population size predicted under the logistic growth model. This is because a logistic model considers that resources are not finite meaning a population cannot continue to grow exponentially and will eventually settle at a carrying capacity, in this case, 60,000,000,000.
 
 
 **3. Add an R script to your repository that makes a graph comparing the exponential and logistic growth curves (using the same parameter estimates you found). Upload this graph to your repo and include it in the README.md file so it can be viewed on the repo homepage.**
