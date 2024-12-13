@@ -84,7 +84,7 @@ $K = 6 * 10^{10}$
 
 $N(t) = \frac{(6 * 10^{10})(975.5486201) e^{(0.01004)(4980)}}{(6 * 10^{10})-(975.5486201)+((975.5486201) e^{(0.01004)(4980)}}) = 6 * 10^{10} = 60,000,000,000$ 
 
-These estimates can be confirmed by producing the functions in R and inputting t = 4980:
+The calculated values can be confirmed by producing the functions in R and inputting t = 4980:
 ```
 #defining parameters
 N0 <- exp(6.88301)
